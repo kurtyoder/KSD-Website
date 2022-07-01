@@ -116,15 +116,20 @@ body p {
   font-weight: 400;
   margin: 0.5rem 0;
   font-size: 0.9rem;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
   color: #ffffff;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
 }
 
 @media screen and (min-width: 768px) {
   .header__top__contact__links a {
     text-align: right;
   }
+}
+
+.header__top__contact__links a:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 .header__banner {
@@ -285,12 +290,27 @@ body p {
   padding: 4rem 2rem;
   margin: 2rem;
   max-width: 23rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .projects-container__center__projects__project h2 {
+  font-style: normal;
   font-weight: 800;
   font-size: 1.5rem;
   line-height: 1.6rem;
+}
+
+.projects-container__center__projects__project p {
+  margin: 1rem 0;
 }
 
 .projects-container__center__projects__project__tags {
@@ -301,7 +321,8 @@ body p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: 1rem 0;
+  -ms-flex-item-align: end;
+      align-self: end;
 }
 
 .projects-container__center__projects__project__tags__tag {
@@ -358,6 +379,17 @@ body p {
   margin: 1rem 0;
 }
 
+.contact__split__text__numbers a {
+  color: #3A81EA;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+}
+
+.contact__split__text__numbers a:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
 .contact__split__image {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -382,5 +414,14 @@ body p {
 
 .contact__split__image p {
   text-align: center;
+}
+
+.footer p {
+  text-align: center;
+  margin: 0.5rem 0;
+  font-size: .75rem;
+  font-weight: 400;
+  color: #858585;
+  line-height: 1.6rem;
 }
 /*# sourceMappingURL=site.css.map */

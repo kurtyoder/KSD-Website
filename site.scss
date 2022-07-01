@@ -101,8 +101,12 @@ body {
                     font-weight: 400;
                     margin: 0.5rem 0;
                     font-size: 0.9rem;
-                    text-decoration-line: underline;
                     color: #ffffff;
+                    text-decoration-line: none;
+
+                    &:hover {                        
+                        text-decoration-line: underline;                        
+                    }
                 }
             }
         }
@@ -231,18 +235,25 @@ body {
                 padding: 4rem 2rem;
                 margin: 2rem;
                 max-width: 23rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
 
                 h2 {
+                    font-style: normal;
                     font-weight: 800;
                     font-size: 1.5rem;
                     line-height: 1.6rem;
                 }
 
+                p {
+                    margin: 1rem 0 ;
+                }
+
                 &__tags {
                     display: flex;
                     flex-direction: row;
-
-                    margin: 1rem 0;
+                    align-self: end;
 
                     &__tag {
                         margin-right: 0.25rem;
@@ -297,6 +308,15 @@ body {
                 p {
                     margin: 1rem 0;
                 }
+
+                a {
+                    color: #3A81EA;
+                    text-decoration-line: none;
+
+                    &:hover {
+                        text-decoration-line: underline;
+                    }
+                }
             }
         }
 
@@ -316,5 +336,17 @@ body {
                 text-align: center;
             }
         }
+    }
+}
+
+
+.footer {
+    p {
+        text-align: center;
+        margin: 0.5rem 0;
+        font-size: .75rem;
+        font-weight: 400;
+        color: #858585;
+        line-height: 1.6rem;
     }
 }
